@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>深圳市前海智媒科技有限公司</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="icon" href="pic.ico" type="image/x-ico"／>
+	<style>
+		.test .block {
+			width: 200px;
+			height: 200px;
+			color: #fff;
+			background: red;
+			float: right;
+		}
+		.test .clear {
+			/*clear: both;*/
+			clear: right;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="test">
+			
+			<div class="block block1">1</div>
+			<div class="block block2">2</div>
+			<div class="clear"></div>
+
+	</div>
+
+	<div class="login">
+		<div class="xx">
+			<h3 class="title">密码登录</h3> <a href="register.html">register</a>
+			<a class="forget-password pull-right" href="https://passport.zhimei360.com/user/forget?app_id=Zhiku">忘记密码</a>
+		</div>		
+		
+		<div class="phone-box" id="phone-box">
+			<input type="text" class="phone" id="phone" placeholder="手机号/邮箱" >
+			<span class="error-message" id="phone-error-message">请输入手机号/邮箱</span>
+
+		</div>  
+
+		<div class="password-box error-box-display" id="password-box">
+			<input type="password" class="password" id='password'  placeholder="密码">
+			<span class="error-message" id="password-error-message" >请输入密码</span>
+		</div>
+
+		<button type="submit" class="btn" id="submit">登录</button>
+	</div>
+	
+<script src="verification.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
